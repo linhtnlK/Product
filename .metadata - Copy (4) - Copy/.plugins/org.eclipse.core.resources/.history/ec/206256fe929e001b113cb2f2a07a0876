@@ -1,0 +1,40 @@
+
+package com.linhtnl.product.parts;
+
+import javax.inject.Inject;
+
+import org.osgi.service.event.EventHandler;
+
+import javax.annotation.PostConstruct;
+
+import org.eclipse.e4.core.di.extensions.EventTopic;
+import org.eclipse.e4.core.services.events.IEventBroker;
+import org.eclipse.e4.ui.di.UIEventTopic;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Label;
+
+public class Avatar extends {
+	@Inject
+	private IEventBroker eventBroker;
+	private String path = "";
+
+	@Inject
+	public Avatar(@UIEventTopic("Avatar") String path) {
+		this.path = path;
+	}
+
+	
+
+	@PostConstruct
+	public void postConstruct(Composite parent) {
+
+//		Image img = new Image(parent.getDisplay(), path);
+//		Label lbl = new Label(parent, SWT.BORDER);
+//		lbl.setImage(img);
+	}
+
+}

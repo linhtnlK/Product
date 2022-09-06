@@ -1,0 +1,12 @@
+package com.linhtnl.fileIO;
+
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+
+public class WriteFile {
+
+	
+	// Save info
+	
+}

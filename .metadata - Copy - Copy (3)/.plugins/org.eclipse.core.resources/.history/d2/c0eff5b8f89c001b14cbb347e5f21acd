@@ -1,0 +1,12 @@
+ 
+package com.linhtnl.product.handler;
+
+import org.eclipse.e4.core.di.annotations.Execute;
+
+public class WelcomeHandler {
+	@Execute
+	public void execute() {
+		MessageDialog.openInformation(shell, "Welcome", "Eclipse 4 RCP Application");
+	}
+		
+}

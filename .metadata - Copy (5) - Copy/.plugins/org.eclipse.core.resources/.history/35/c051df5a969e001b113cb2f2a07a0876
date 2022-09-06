@@ -1,0 +1,26 @@
+ 
+package com.linhtnl.product.parts;
+
+import javax.inject.Inject;
+import javax.annotation.PostConstruct;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Label;
+
+public class Welcome {
+	private String username = "";
+	Label lbl;
+	Composite p;
+	@Inject
+	public Welcome() {
+		
+	}
+	
+	@PostConstruct
+	public void postConstruct(Composite parent) {
+		
+	}
+	
+	
+	
+	
+}

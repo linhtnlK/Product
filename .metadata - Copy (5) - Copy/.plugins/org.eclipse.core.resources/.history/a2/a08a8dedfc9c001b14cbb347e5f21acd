@@ -1,0 +1,8 @@
+package com.linhtnl.models;
+
+public class User {
+	private String id;
+	private String username;
+	private String dateOfBirth;
+	private String gender;
+}

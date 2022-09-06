@@ -1,0 +1,5 @@
+package com.linhtnl.models;
+
+public class User {
+
+}

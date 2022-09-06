@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Pky1gKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_SGf9QKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.trimmedwindow.taskmanager" label="Task Manager" x="100" y="100" width="800" height="1024">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_h_w8AKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.partsashcontainer.main" horizontal="true">
+      <children xsi:type="basic:PartStack" xmi:id="_nPDrYKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.partstack.0" accessibilityPhrase="">
+        <children xsi:type="basic:Part" xmi:id="_uCtwgKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.part.overview" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.parts.TodoOverviewPart" label="Overview"/>
+      </children>
+      <children xsi:type="basic:PartSashContainer" xmi:id="_ojtxMKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.partsashcontainer.0">
+        <children xsi:type="basic:PartStack" xmi:id="_pOcJMKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.partstack.1">
+          <children xsi:type="basic:Part" xmi:id="_vph9UKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.part.details" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.parts.TodoDetailsPart" label="Details"/>
+        </children>
+        <children xsi:type="basic:PartStack" xmi:id="_ptKFgKDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.partstack.2">
+          <children xsi:type="basic:Part" xmi:id="_wuv48KDtEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.part.playground" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.parts.PlaygroundPart" label="Playground"/>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_a7EigKDzEeu2g-VFxs052w" elementId="org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_gXcroKDzEeu2g-VFxs052w" elementId="org.eclipse.ui.file.menu" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_kztbkKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handledmenuitem.save" label="Save" command="_XC1iIKDyEeu2g-VFxs052w"/>
+        <children xsi:type="menu:MenuSeparator" xmi:id="_3Mv9gKD1Eeu2g-VFxs052w" elementId="com.vogella.tasks.ui.menuseparator.0"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_hVrOcKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.menu.edit" label="Edit">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_-9SaQKD4Eeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handledmenuitem.exit" label="Exit" command="_ZM6NAKDyEeu2g-VFxs052w"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_EwJwwKD5Eeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handledmenuitem.new" label="Create task"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_IofUQKD5Eeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handledmenuitem.remove" label="Remove task"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_MG574KD5Eeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handledmenuitem.test" label="For testing"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_DgH7AKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handler.saveall" contributionURI="bundleclass://com.vogella.tasks.ui/SaveAllHandler" command="_XC1iIKDyEeu2g-VFxs052w"/>
+  <handlers xmi:id="_G37kUKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handler.exit" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.handlers.ExitHandler" command="_ZM6NAKDyEeu2g-VFxs052w"/>
+  <handlers xmi:id="_I1_zgKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handler.new" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.handlers.NewTaskHandler" command="_a4ovAKDyEeu2g-VFxs052w"/>
+  <handlers xmi:id="_MF76QKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handler.remove" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.handlers.RemoveTaskHandler" command="_dPiU8KDyEeu2g-VFxs052w"/>
+  <handlers xmi:id="_ObNvkKDzEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.handler.test" contributionURI="bundleclass://com.vogella.tasks.ui/com.vogella.tasks.ui.handlers.TestHandler" command="_f2NcQKDyEeu2g-VFxs052w"/>
+  <commands xmi:id="_XC1iIKDyEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.command.saveAll" commandName="Save"/>
+  <commands xmi:id="_ZM6NAKDyEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.command.exit" commandName="Exit"/>
+  <commands xmi:id="_a4ovAKDyEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.command.new" commandName="Create task"/>
+  <commands xmi:id="_dPiU8KDyEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.command.remove" commandName="Remove task"/>
+  <commands xmi:id="_f2NcQKDyEeu2g-VFxs052w" elementId="com.vogella.tasks.ui.command.test" commandName="For testing"/>
+  <addons xmi:id="_Pky1gaDtEeu2g-VFxs052w" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_Pky1gqDtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_Pky1g6DtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_Pky1hKDtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_Pky1haDtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_Pky1hqDtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_Pky1h6DtEeu2g-VFxs052w" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+</application:Application>

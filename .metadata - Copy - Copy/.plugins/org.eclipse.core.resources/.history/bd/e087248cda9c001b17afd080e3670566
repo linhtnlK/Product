@@ -1,0 +1,22 @@
+ 
+package com.linhtnl.product.parts;
+
+import javax.inject.Inject;
+import javax.annotation.PostConstruct;
+import org.eclipse.swt.widgets.Composite;
+
+public class Bottom {
+	@Inject
+	public Bottom() {
+		
+	}
+	
+	@PostConstruct
+	public void postConstruct(Composite parent) {
+		
+	}
+	
+	
+	
+	
+}

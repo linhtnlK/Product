@@ -1,0 +1,86 @@
+package com.linhtnl.models;
+
+public class User {
+	private String avatar;
+	private String pass;
+	private String username;
+	private String dateOfBirth;
+	private String gender;
+	private String firstName;
+	private String lastName;
+	public User(String username, String password, String fName, String lName, String dob, String gender, String avatar) {
+		this.username=username;
+		pass=password;
+		firstName=fName;
+		lastName=lName;
+		dateOfBirth=dob;
+		this.gender=gender;
+		this.avatar=avatar;
+	}
+	
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+
+	public void setDateOfBirth(String dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+	public void setavatar(String avatar) {
+		this.avatar = avatar;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getPass() {
+		return pass;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public String getavatar() {
+		return avatar;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+}

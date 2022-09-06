@@ -1,0 +1,13 @@
+ 
+package com.linhtnl.product.handler;
+
+import org.eclipse.e4.core.di.annotations.Execute;
+import org.eclipse.jface.dialogs.MessageDialog;
+
+public class InformationHandler {
+	@Execute
+	public void execute() {
+		MessageDialog.openInformation(shell, "Info", "Eclipse 4 RCP Application");
+	}
+		
+}

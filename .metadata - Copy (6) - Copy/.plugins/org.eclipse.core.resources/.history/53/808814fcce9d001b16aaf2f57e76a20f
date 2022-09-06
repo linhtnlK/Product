@@ -1,0 +1,22 @@
+package com.linhtnl.fileIO;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class WriteFile {
+
+	// Save image
+	public void SaveImage(String filePath) throws Exception {
+		InputStream is = null;
+		OutputStream os = null;
+		System.out.print(filePath);
+		System.out.print(filePath.split("\\"));
+	}
+	// Save info
+
+}
